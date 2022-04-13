@@ -31,6 +31,14 @@
         function first() {
             // Local Scope First
             let firstVariable = 'First';
+
+            function firstNested() {
+                document.writeln(firstVariable);
+                const firstNestedVariable = "First Nested";
+            };
+
+            firstNested();
+            document.writeln(firstNestedVariable);
         };
 
         function second() {
